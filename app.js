@@ -3,23 +3,19 @@ const path = require("path");
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, "/public")));
+app.use(express.static("public"));
 app.use(express.static(path.join(__dirname, "/views")));
 
 app.all("/", (request, response) => {
-  response.sendFile(path.join(__dirname, "views", "home.html"));
+  response.sendFile(path.join(__dirname, "views", "index.html"));
 });
 
-app.all("/about", (request, response) => {
-  response.sendFile(path.join(__dirname, "views", "about.html"));
+app.all("/films", (request, response) => {
+  response.sendFile(path.join(__dirname, "views", "films.html"));
 });
 
-app.all("/works", (request, response) => {
-  response.sendFile(path.join(__dirname, "views", "works.html"));
-});
-
-app.all("/gallery", (request, response) => {
-  response.sendFile(path.join(__dirname, "views", "gallery.html"));
+app.all("/planets", (request, response) => {
+  response.sendFile(path.join(__dirname, "views", "planets.html"));
 });
 
 app.listen(3000, () => {

@@ -1,0 +1,89 @@
+:root {
+  --clr-ylw: #ffff82;
+  --clr-blu: rgb(75, 213, 238);
+}
+
+body {
+  font-size: 10px;
+  background-color: black;
+  margin: 0;
+  color: var(--clr-ylw);
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-blu);
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.columns {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+.page-title {
+  width: 100%;
+  text-align: center;
+}
+
+.films-container {
+  max-width: 90em;
+  margin: auto;
+}
+
+.films-container > * {
+  flex: 0 1 30em;
+  align-items: center;
+}
+
+.film-title {
+  font-size: 1.5rem;
+}
+
+.film-img {
+  width: 100px;
+  border: 2px solid white;
+}
+
+.planets-head {
+  font-size: 1.8;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.planets-table {
+  font-size: 1.6rem;
+  width: 30%;
+  margin: auto;
+}
+
+.nav-links {
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 20%;
+  text-align: center;
+}

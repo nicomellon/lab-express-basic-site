@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SW - Planets</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script defer src="/scripts/stars.js"></script>
+    <script defer src="/scripts/index.js"></script>
+    <script defer src="/scripts/planets.js"></script>
+  </head>
+  <body>
+    <h1 class="page-title">Planets</h1>
+    <div class="planets-head">
+      <label for="planets"
+        >Get planet info:
+        <select name="planets" class="planet-select">
+          <option value="1">Tatooine</option>
+          <option value="2">Alderaan</option>
+          <option value="3">Yavin IV</option>
+          <option value="4">Hoth</option>
+          <option value="5">Dagobah</option>
+          <option value="6">Bespin</option>
+          <option value="7">Endor</option>
+          <option value="8">Naboo</option>
+          <option value="9">Coruscant</option>
+          <option value="10">Kamino</option>
+        </select>
+      </label>
+    </div>
+
+    <table class="planets-table">
+      <thead>
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td class="planet-name"></td>
+          </tr>
+          <tr>
+            <td>Population:</td>
+            <td class="planet-population"></td>
+          </tr>
+          <tr>
+            <td>Diameter:</td>
+            <td class="planet-diameter"></td>
+          </tr>
+          <tr>
+            <td>Terrain:</td>
+            <td class="planet-terrain"></td>
+          </tr>
+          <tr>
+            <td>Gravity:</td>
+            <td class="planet-gravity"></td>
+          </tr>
+          <tr>
+            <td>Climate:</td>
+            <td class="planet-climate"></td>
+          </tr>
+          <tr>
+            <td>Orbital period:</td>
+            <td class="planet-orbit"></td>
+          </tr>
+          <tr>
+            <td>Rotation period:</td>
+            <td class="planet-rotation"></td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <nav class="nav-links">
+      <a href="/">home</a>
+    </nav>
+  </body>
+</html>
