@@ -4,7 +4,6 @@ const path = require("path");
 const app = express();
 
 app.use(express.static("public"));
-app.use(express.static(path.join(__dirname, "/views")));
 
 app.all("/", (request, response) => {
   response.sendFile(path.join(__dirname, "views", "index.html"));
